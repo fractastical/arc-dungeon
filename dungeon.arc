@@ -1,3 +1,5 @@
+(require db/mongodb)
+
 (define (generate-room nextRoomName direction)
   (define prompt (format "Generate a room for a dungeon game in JSON format with description and exits. The room should be connected to \"~a\" from the \"~a\". Please provide the following data: room name, room description, exits (as a list of direction-room pairs), and the room position (as a x, y, z coordinate)." nextRoomName direction))
 
